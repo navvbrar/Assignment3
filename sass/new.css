@@ -1,0 +1,31 @@
+.li-nav {
+  color: #FFFF00;
+}
+.li-nav:hover {
+  color: #FFFFFF;
+}
+
+#button-cl {
+  background-color: red;
+}
+
+#button-sl {
+  background-color: red;
+}
+
+.submit-form {
+  background-color: red;
+  height: 40px;
+}
+
+.border-dash {
+  border: 2px dashed black;
+}
+
+.up-down {
+  text-transform: uppercase;
+}
+.up-down::after {
+  content: attr(data-value);
+  text-transform: uppercase;
+}/*# sourceMappingURL=new.css.map */

@@ -1,0 +1,81 @@
+
+
+
+
+.container-prey {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.shark-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    flex: 2;
+}
+
+.shark-info:hover {
+    transform: translateY(-20px);
+}
+
+.shark-info img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 20px 0 0;
+}
+
+.shark-info h2 {
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.shark-info p {
+    color: #333;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.shark-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shark-info ul li {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.shark-info ul li:first-child {
+    border-top: none;
+}
+
+.shark-info ul li img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.shark-info h3 {
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.shark-info ul li img {
+    width: 200px; /* Increase the size of prey and predator images */
+    height: auto;
+    margin-right: 10px;
+}
+

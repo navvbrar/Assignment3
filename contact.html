@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="sass/new.css">
+    <style>
+        /* Add CSS for the fixed navigation bar */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container1" style="margin-top: 20px;">
+            <div class="row justify-content-between align-items-center">
+                <div class="fish-name">
+                    <!-- Write your species name under the anchor tag -->
+                    <a href="index.html">   </a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html#home" class="li-nav">Home</a></li>
+                        <li><a href="index.html#about" class="li-nav">About</a></li>
+                        <li><a href="index.html#predators" class="li-nav">Prey & Predators</a></li>
+                        <li><a href="index.html#gallery" class="li-nav">Gallery</a></li>
+                        <li><a href="index.html#count" class="li-nav">World Count</a></li>
+                        <li><a href="honesty.html" class="li-nav">Honesty Declaration</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container border-dash">
+        <div class="text">
+            Contact us
+        </div>
+        <span id="show" style="height: 30px; color:red"></span>
+        <form id="form" onsubmit="return valid()" action="https://formspree.io/f/xvoevolo" method="post">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="f-n  ame" name="firstname" required minlength="5">
+                    <div class="underline"></div>
+                    <label for="" id="f-name-label">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="l-name" name="lastname" required minlength="5">
+                    <div class="underline"></div>
+                    <label for="" id="l-name-label">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="number" id="phone" name="phone" required minlength="10" maxlength="10">
+                    <div class="underline"></div>
+                    <label for="" id="l-phone">Phone number</label>
+                </div>
+                <div class="input-data">
+                    <input type="email" id="email" name="email" required>
+                    <div class="underline"></div>
+                    <label for="" id="l-email">Email Address</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="date" id="date" name="date" required>
+                    <div class="underline"></div>
+                    <label for="" id="l-date"></label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" id="message" name="message" required="false"></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="" id="l-message">Write your message</label>
+                    <br />
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <div class="submit-form"> <input class="submit-form" type="submit" value="submit" onclick="valid()"></div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var header = $(".header");
+            var navOffset = header.offset().top;
+
+            $(window).scroll(function() {
+                var scrollPos = $(window).scrollTop();
+
+                if (scrollPos >= navOffset) {
+                    header.addClass("fixed-nav");
+                } else {
+                    header.removeClass("fixed-nav");
+                }
+            });
+        });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/form.js" rel="javascript/text"></script>
+</body>
+</html>

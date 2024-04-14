@@ -1,0 +1,31 @@
+
+.bi{
+    background-image: url("ss.gif");
+    background-size: cover;
+    
+}
+/* header {
+ 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+} */
+
+.container-world {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+p {
+  font-size: 18px;
+}
+.image-container {
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+
+}
+.img-wrold {
+  width: 800px;
+  height: 500px;
+}

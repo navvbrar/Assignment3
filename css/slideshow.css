@@ -1,0 +1,74 @@
+#items {
+    position : relative;
+    width : 100%;
+    height : 500px;
+    top : 70px;
+    left : 25%;
+}
+.galleryimg-sl{
+    position : absolute;
+    background-color : #eee;
+    border : 1px solid #ccc;
+    width : 700px;
+    height : 400px;
+    background-color:lightblue ;
+    display :none;
+    text-align : center;
+    font-size : 72px;
+}
+.first{
+    display : block;
+    left: 30%;
+}
+#controls {
+    margin-top : 30px;
+    margin-left: 520px;
+    display: inline-block;
+   
+}
+.li-sl{
+    display: inline-block;
+     width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 30px;
+        border : 1px solid #ccc;
+    background-color : #eee;
+    cursor : pointer;
+   
+}
+#play {
+    display : none;
+}
+.close-button {
+   
+    margin: 0px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    #button-cl{
+        border: 2px solid black;
+        width: 150px;  
+        height: 30px;
+        cursor: pointer;
+    }
+    .show-button {
+        margin-left: 680px;
+  
+        display: none;
+        justify-content: center;
+        align-items: center;
+            cursor: pointer;
+           
+}
+#button-sl{
+    border: 2px solid black;
+    width: 90px;  
+    height: 60px;
+    cursor: pointer;
+    
+}

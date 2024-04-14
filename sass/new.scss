@@ -1,0 +1,35 @@
+$white:#FFFFFF;
+$yellow:#FFFF00;
+
+.li-nav {
+    color:$yellow;
+
+    &:hover {
+        color: $white;
+      }
+}
+
+#button-cl{
+    background-color: red;
+
+      
+      }
+
+#button-sl{
+    background-color: red;
+}
+.submit-form{
+    background-color: red;
+    height: 40px;
+}
+.border-dash{
+    border: 2px dashed black;
+}
+.up-down{
+    text-transform: uppercase;
+    &::after {
+        content: attr(data-value);
+        text-transform: uppercase;
+        
+    }
+}
